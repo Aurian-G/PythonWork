@@ -4,7 +4,7 @@ import random
 
 import os
 
-print('Welcome to Tic Tac Toe mothafuckas. Created by your boy, yan')
+print('Welcome to Tic Tac Toe. Created by yan')
 
 while True:
     
@@ -36,13 +36,13 @@ while True:
             #check if they won
             if functions.win_check(board, player1_marker):
                 functions.display_board(board)
-                print('Player 1 has won like a jende')
+                print('Player 1 has won!')
                 game_on = False
             else:
             #check if tie
                 if functions.full_board_check(board):
                     functions.display_board(board)
-                    print('Tie game you ahmags')
+                    print('Tie game!')
                     game_on = False
              #no tie and no win. Then next players turn
                 else:
@@ -57,12 +57,12 @@ while True:
             
             if functions.win_check(board, player2_marker):
                 functions.display_board(board)
-                print('Player 2 has won like a jende')
+                print('Player 2 has won!')
                 game_on = False
             else:
                 if functions.full_board_check(board):
                     functions.display_board(board)
-                    print('Tie game you ahmags')
+                    print('Tie game!')
                     game_on = False
                 else:
                     turn = 'Player 1'
